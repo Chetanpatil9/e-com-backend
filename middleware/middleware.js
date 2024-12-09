@@ -1,4 +1,4 @@
-const secretkey = "shivampatil";
+const secretkey = "chetanhake";
 const jwt = require('jsonwebtoken');
 
 const verifyUser = (req, res, next) => {

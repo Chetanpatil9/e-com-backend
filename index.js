@@ -7,7 +7,6 @@ const usersRouter = require("./route/users")
 const productsRouter = require("./route/products")
 
 const cors = require("cors")
-
 app.use(cors({
     origin: "*"
 }))
@@ -22,10 +21,10 @@ app.get("/", (req, res) => {
     res.send("Hello")
 })
 
-app.listen(8000, async () => {
+app.listen(3000, async () => {
     try {
         await connectDB()
-        console.log("Server is running at port 8000")
+        console.log("Server is running at port 3000")
     }
     catch (err) {
         console.log(`Error in the server ${err}`)
